@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="688.0" prefWidth="1365.0" style="-fx-background-color: #b6b6b4;" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hospital_managment.FXMLDocumentController">
+   <children>
+      <MenuBar fx:id="menu" layoutY="-1.0" maxWidth="-Infinity" prefHeight="31.0" prefWidth="1380.0" style="-fx-background-color: #566d7e;">
+        <menus>
+          <Menu id="admin" fx:id="admin" mnemonicParsing="false" text="Admin">
+            <items>
+              <MenuItem fx:id="user" mnemonicParsing="false" onAction="#handle" text="User" />
+                  <MenuItem fx:id="search_password" mnemonicParsing="false" onAction="#handle" text="Search password" />
+                  <MenuItem fx:id="change_password" mnemonicParsing="false" onAction="#handle" text="Change password" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem fx:id="stuff" mnemonicParsing="false" onAction="#handle" text="stuff" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem fx:id="room" mnemonicParsing="false" onAction="#handle" text="Room" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+            </items>
+          </Menu>
+          <Menu fx:id="recipitionist" mnemonicParsing="false" text="Recipitionist">
+            <items>
+              <MenuItem fx:id="reciption_patient" mnemonicParsing="false" onAction="#handle" text="Patient" />
+                  <MenuItem fx:id="reciption_changepassword" mnemonicParsing="false" onAction="#handle" text="Change password" />
+            </items>
+          </Menu>
+          <Menu fx:id="doctor" mnemonicParsing="false" text="Doctor">
+               <items>
+                  <MenuItem fx:id="doctor_patient" mnemonicParsing="false" onAction="#handle" text="Patient" />
+                  <MenuItem fx:id="doctor_changepassword" mnemonicParsing="false" onAction="#handle" text="Change password" />
+               </items>
+          </Menu>
+            <Menu fx:id="nurse" mnemonicParsing="false" text="Nurse">
+              <items>
+                  <MenuItem fx:id="nurse_patient" mnemonicParsing="false" onAction="#handle" text="Patient" />
+                  <MenuItem fx:id="nurse_changepassword" mnemonicParsing="false" onAction="#handle" text="Change password" />
+              </items>
+            </Menu>
+            <Menu fx:id="pharmasist" mnemonicParsing="false" text="Pharmasist">
+              <items>
+                  <MenuItem fx:id="pharmasist_patient" mnemonicParsing="false" onAction="#handle" text="Patient" />
+                  <MenuItem fx:id="pharmasist_changepassword" mnemonicParsing="false" onAction="#handle" text="Change password" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="X_ray" fx:id="xray">
+              <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handle" text="Patient" fx:id="xray_patient" />
+                  <MenuItem mnemonicParsing="false" onAction="#handle" text="Change password" fx:id="xray_changepassword" />
+              </items>
+            </Menu>
+            <Menu fx:id="lab" mnemonicParsing="false" text="Lab">
+              <items>
+                  <MenuItem fx:id="lab_patient" mnemonicParsing="false" onAction="#handle" text="Patient" />
+                  <MenuItem fx:id="lab_changepassword" mnemonicParsing="false" onAction="#handle" text="Change password" />
+              </items>
+            </Menu>
+            <Menu fx:id="accountant" mnemonicParsing="false" text="Accountant">
+              <items>
+                  <MenuItem fx:id="accountant_patient" mnemonicParsing="false" onAction="#handle" text="Patient" />
+                  <MenuItem fx:id="accountant_changepassword" mnemonicParsing="false" onAction="#handle" text="Change password" />
+              </items>
+            </Menu>
+            <Menu fx:id="about" mnemonicParsing="false" text="About">
+              <items>
+                <MenuItem fx:id="help" mnemonicParsing="false" onAction="#handle" text="Help" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <ImageView fx:id="image" fitHeight="667.0" fitWidth="1374.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" >
+          
+          <image>
+              
+              <javafx.scene.image.Image url="hospital_managment/66.jpg"></javafx.scene.image.Image>
+              
+          </image>
+          
+      </ImageView>
+   
+   </children>
+</Pane>

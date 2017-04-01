@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="352.0" prefWidth="659.0" style="-fx-background-color: #254117;" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="room.RoomController">
+   <children>
+      <Text layoutX="82.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room id" />
+      <Text layoutX="77.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Department" />
+      <Text layoutX="84.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type" />
+      <Text layoutX="82.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cost" />
+      <Text layoutX="81.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="State" />
+      <Text layoutX="78.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Service cost" />
+      <TextField fx:id="room_id" layoutX="168.0" layoutY="53.0" promptText="room_id" />
+      <TextField fx:id="cost" layoutX="168.0" layoutY="243.0" promptText="Cost" />
+      <TextField fx:id="service_cost" layoutX="168.0" layoutY="287.0" promptText="Service cost" />
+      <ComboBox fx:id="type" layoutX="167.0" layoutY="102.0" prefHeight="25.0" prefWidth="94.0" promptText="choose ...." />
+      <ComboBox fx:id="department" layoutX="167.0" layoutY="148.0" prefWidth="150.0" promptText="choose ...." />
+      <ComboBox fx:id="state" layoutX="167.0" layoutY="198.0" prefHeight="25.0" prefWidth="94.0" promptText="choose ...." />
+      <Pane layoutX="379.0" layoutY="70.0" prefHeight="182.0" prefWidth="248.0" style="-fx-background-color: #4c787e;">
+         <effect>
+            <Lighting diffuseConstant="0.95" specularConstant="0.49" specularExponent="11.16" surfaceScale="4.29">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+               </light>
+            </Lighting>
+         </effect>
+         <children>
+            <Ellipse fx:id="add" fill="DODGERBLUE" layoutX="68.0" layoutY="38.0" onMouseClicked="#handle" radiusX="54.0" radiusY="24.0" stroke="BLACK" strokeType="INSIDE" />
+            <Ellipse fx:id="update" fill="DODGERBLUE" layoutX="182.0" layoutY="38.0" onMouseClicked="#handle" radiusX="54.0" radiusY="24.0" stroke="BLACK" strokeType="INSIDE" />
+            <Ellipse fx:id="getdata" fill="DODGERBLUE" layoutX="122.0" layoutY="91.0" onMouseClicked="#handle" radiusX="54.0" radiusY="24.0" stroke="BLACK" strokeType="INSIDE" />
+            <Ellipse fx:id="delete" fill="DODGERBLUE" layoutX="182.0" layoutY="149.0" onMouseClicked="#handle" radiusX="54.0" radiusY="24.0" stroke="BLACK" strokeType="INSIDE" />
+            <Ellipse fx:id="nnew" fill="DODGERBLUE" layoutX="68.0" layoutY="149.0" onMouseClicked="#handle" radiusX="54.0" radiusY="24.0" stroke="BLACK" strokeType="INSIDE" />
+            <Text fx:id="a" layoutX="53.0" layoutY="43.0" onMouseClicked="#handle" strokeType="OUTSIDE" strokeWidth="0.0" text="Add" wrappingWidth="55.13671875" />
+            <Text fx:id="g" layoutX="100.0" layoutY="96.0" onMouseClicked="#handle" strokeType="OUTSIDE" strokeWidth="0.0" text="Get Date" wrappingWidth="55.13671875" />
+            <Text fx:id="d" layoutX="168.0" layoutY="154.0" onMouseClicked="#handle" strokeType="OUTSIDE" strokeWidth="0.0" text="Delete" wrappingWidth="55.13671875" />
+            <Text fx:id="n" layoutX="53.0" layoutY="154.0" onMouseClicked="#handle" strokeType="OUTSIDE" strokeWidth="0.0" text="New" wrappingWidth="55.13671875" />
+            <Text fx:id="u" layoutX="161.0" layoutY="43.0" onMouseClicked="#handle" strokeType="OUTSIDE" strokeWidth="0.0" text="Update" wrappingWidth="55.13671875" />
+         </children>
+      </Pane>
+   </children>
+</Pane>

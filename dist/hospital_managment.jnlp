@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="hospital_managment.jnlp">
+  <information>
+    <title>hospital_managment</title>
+    <vendor>ahmed</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="hospital_managment.jar" size="509754" download="eager" />
+    <jar href="lib/jfoenix.jar" size="2228936" download="eager" />
+    <jar href="lib/mysql-connector-java-5.1.23-bin.jar" size="860468" download="eager" />
+    <jar href="lib/rs2xml.jar" size="180909" download="eager" />
+  </resources>
+<security>
+  <all-permissions/>
+</security>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="hospital_managment" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="login.login"  name="hospital_managment" />
+  <update check="always"/>
+</jnlp>

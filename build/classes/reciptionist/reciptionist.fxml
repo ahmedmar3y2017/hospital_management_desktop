@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="611.0" prefWidth="904.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reciptionist.ReciptionistController">
+   <children>
+      <Text layoutX="88.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="id" wrappingWidth="89.13671875" />
+      <Text layoutX="88.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First name" />
+      <Text layoutX="88.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="last name" />
+      <Text layoutX="88.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="mobile" />
+      <Text layoutX="88.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="age" />
+      <Text layoutX="92.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="email" />
+      <Text layoutX="87.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="address" />
+      <TextField fx:id="id" layoutX="174.0" layoutY="55.0" />
+      <TextField fx:id="address" layoutX="174.0" layoutY="339.0" />
+      <TextField fx:id="firstname" layoutX="174.0" layoutY="111.0" />
+      <TextField fx:id="lastname" layoutX="174.0" layoutY="153.0" />
+      <TextField fx:id="mobile" layoutX="174.0" layoutY="202.0" />
+      <TextField fx:id="age" layoutX="174.0" layoutY="244.0" />
+      <TextField fx:id="email" layoutX="174.0" layoutY="288.0" />
+      <ComboBox fx:id="gender" layoutX="174.0" layoutY="383.0" prefWidth="150.0" />
+      <ComboBox fx:id="blood" layoutX="174.0" layoutY="426.0" prefWidth="150.0" />
+      <Text layoutX="87.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender" />
+      <Text layoutX="87.0" layoutY="443.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blood group" />
+      <Text layoutX="87.0" layoutY="490.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pationt state" />
+      <JFXTextArea fx:id="state" layoutX="167.0" layoutY="461.0" maxWidth="271.0" minWidth="150.0" prefHeight="72.0" prefWidth="150.0" />
+      <Button fx:id="delete" layoutX="468.0" layoutY="30.0" mnemonicParsing="false" onAction="#action" text="Delete" />
+      <Button fx:id="add" layoutX="472.0" layoutY="68.0" mnemonicParsing="false" onAction="#action" prefHeight="25.0" prefWidth="55.0" text="Add" />
+      <Button fx:id="update" layoutX="472.0" layoutY="103.0" mnemonicParsing="false" onAction="#action" text="Update" />
+      <Button fx:id="search" layoutX="467.0" layoutY="145.0" mnemonicParsing="false" onAction="#action" prefHeight="25.0" prefWidth="66.0" text="Search" />
+      <JFXTextArea fx:id="fromdoc" layoutX="553.0" layoutY="288.0" maxWidth="271.0" minWidth="112.0" prefHeight="72.0" prefWidth="112.0" />
+      <JFXTextArea fx:id="fromacc" layoutX="553.0" layoutY="202.0" maxWidth="271.0" minWidth="112.0" prefHeight="72.0" prefWidth="112.0" />
+      <Text layoutX="455.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="remark from doctor" wrappingWidth="89.13671875" />
+      <Text layoutX="455.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remark from accountancy" wrappingWidth="89.13671875" />
+      <Text layoutX="455.0" layoutY="413.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room Number" />
+      <Text layoutX="459.0" layoutY="443.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Departement" />
+      <Text layoutX="463.0" layoutY="482.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room Type" />
+      <Text layoutX="460.0" layoutY="518.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date of joining" />
+      <TextField fx:id="room_number" layoutX="551.0" layoutY="395.0" />
+      <ComboBox fx:id="room_type" layoutX="555.0" layoutY="465.0" prefWidth="150.0" />
+      <ComboBox fx:id="department" layoutX="551.0" layoutY="434.0" prefWidth="150.0" />
+      <ComboBox fx:id="year" layoutX="685.0" layoutY="501.0" prefHeight="25.0" prefWidth="55.0" />
+      <ComboBox fx:id="month" layoutX="626.0" layoutY="501.0" prefHeight="25.0" prefWidth="37.0" />
+      <ComboBox fx:id="day" layoutX="551.0" layoutY="501.0" prefHeight="25.0" prefWidth="55.0" />
+      <Button fx:id="save" layoutX="740.0" layoutY="426.0" mnemonicParsing="false" text="Save" />
+      <Button fx:id="get_data" layoutX="740.0" layoutY="392.0" mnemonicParsing="false" text="Get data" />
+   </children>
+</AnchorPane>
